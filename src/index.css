@@ -1,13 +1,265 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.menubar .menubar1 p:hover {
+  background-color: rgb(3, 51, 94);
+  ;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.head_icons i:hover {
+  background-color:rgb(19, 19, 153);
+  color: rgb(243, 243, 243);
 }
+
+.menubar a {
+  text-decoration: none;
+  color: white;
+}
+.menubtn{
+  border-radius: 0px;
+  color: white;
+  font-size: 20px;
+}
+.menubtn:hover{
+  color: white;
+  box-shadow:inset 6px -6px 0px rgb(245, 215, 92);
+}
+.labellogin label{
+  position: relative;
+  right: 135px;
+ 
+}
+.labellogin input{
+  border-radius: 10px;
+  outline-color: #2b2eff;
+}
+.labellogin button{
+  border-radius: 50px;
+  padding: 5px 70px 5px 70px;
+}
+.submenubtn{
+  padding-left: 70px;
+  color: white;
+  font-size: 18px;
+}
+.submenubtn:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+select{
+  background-color: lavender;
+}
+.paginationbtn{
+  width: 90%;
+  height: 40px;
+  margin-left: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: right;
+}
+.paginationbtn a{
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #2b2eff;
+  color: blue;
+  cursor: pointer;
+  text-decoration: none;
+}
+.paginationbtn a:hover{
+  color: white;
+  background-color: blue;
+}
+.paginationActive a{
+  color: white;
+  background-color: blue;
+}
+
+
+/* navbar  */
+.navbar-logo-container {
+  height: 100px;
+  background-color: rgb(9, 82, 146);
+}
+
+.navbar-logo {
+  height: 100px;
+}
+
+.navbar-title {
+  font-size: 20px;
+}
+
+.navbar-subtitle {
+  font-size: 15px;
+}
+
+.navbar-icons {
+  font-size: 25px;
+}
+
+.navbar-icon {
+  cursor: pointer;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  padding: 9px;
+  border: 1px solid black;
+  margin-left: 10px; 
+}
+.head_icons {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(9, 82, 146);
+}
+
+.bg-body-tertiary{
+  backdrop-filter: "blur(30px)";
+  margin-top: -700px;
+  width: 50%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+.font-weight-normal{
+  margin-right: 150px;
+}
+@media (max-width: 576px) {
+  .navbar-icon {
+      display: none;
+  }
+  .font-weight-normal{
+    margin-right: 150px;
+   width: 100%;
+  }
+  /* login */
+  .bg-body-tertiary{
+    backdrop-filter: "blur(30px)";
+    margin-top: -150px;
+    width: 100%;
+    max-width: 500px;
+  }
+  .labellogin label{
+    position: relative;
+    right: 100px;
+  }
+  .head_icons {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(9, 82, 146);
+  }
+  .navbar-logo {
+    height: 100%;
+    width: 100%;
+  }
+  .paginationbtn a{
+    padding: 10px;
+    margin: 0px;
+    border-radius: 5px;
+    border: 1px solid #2b2eff;
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+}
+
+
+/* dashboard */
+.dashboard-container {
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  left: -7%;
+}
+
+.dashboard-card {
+  height: 100px;
+  width: 180px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .dashboard-card {
+      height: 150px;
+      width: 150px;
+      margin: 10px auto;
+  }
+  .dashboard-container{
+    position: relative;
+    left: 5px;
+    width: 330px;
+  }
+
+}
+.listleft{
+  position: relative;
+  left: -80px;
+}
+.addprolist{
+  position: relative;
+  left: -80px;
+}
+@media (max-width: 576px) {
+  .dashboard-card {
+      height: 100px;
+      width: 50%;
+      display: flex;
+      margin-left: 0px;
+      border-radius: 10px;
+  }
+  .dashboard-container{
+    display: flex;
+  
+  }
+  .listleft{
+    position: relative;
+    left: 0px;
+    background-color: #E7E9EB;
+  }
+  .addprolist{
+    position: relative;
+    left: 0px;
+  }
+  .chart {
+    height: 1000px; 
+    width: 100%;
+}
+  
+}
+
+.chart {
+  height: 400px; 
+  width: 100%; 
+}
+
+@media (max-width: 576px) {
+  .chart {
+      height: 600px; 
+      width: 100%; 
+  }
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 80vh; 
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .chart-container {
+      height: 0vh;
+      width: 95vw;
+  }
+  .chart-container .bar{
+height: 300px;
+  }
+  .menubar-horizontal{
+
+    background-color: #2b2eff;
+  }
+}
+
+
