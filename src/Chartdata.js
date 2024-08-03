@@ -12,14 +12,18 @@ const Chartdata = () => {
                 label: "Infected People",
                 borderColor: "#3333ff",
                 backgroundColor: "rgba(0, 0, 255, 0.5)",
-                fill: true
+                fill: true,
+                barThickness: 20, 
+                maxBarThickness: 20,
             },
             {
                 data: [1216410, 1371390, 1477380,10266674,10266674,10266674],
                 label: "Deaths People",
                 borderColor: "#ff3333",
                 backgroundColor: "rgba(255, 0, 0, 0.5)",
-                fill: true
+                fill: true,
+                barThickness: 20, 
+                maxBarThickness: 20,
             }
         ]
     };

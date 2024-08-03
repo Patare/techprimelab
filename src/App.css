@@ -36,3 +36,249 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* src/Login.css */
+/* App.css */
+.logincontener {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  position: relative;
+   top: -400px;
+   height: 422px;
+  width: 410px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 7px 18px 0 rgba(2,118,179,0.13);
+
+}
+
+.login-card {
+  width: 100%;
+  height: 400px;
+  max-width: 400px;
+  padding: 20px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
+  /* background-color: #fff; */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-title {
+ font-size: 20px;
+ margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #3F3F3F;
+  font-family: "Nunito Sans";
+  letter-spacing: 0;
+  line-height: 27px;
+
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  height: 19px;
+  width: 34px;
+  color: #767676;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.form-group input {
+  box-sizing: border-box;
+  height: 48px;
+  width: 337px;
+  border: 1px solid #979797;
+  border-radius: 6px;
+}
+
+
+.input-error {
+  border-color: red;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.875em;
+  height: 1.25rem; /* Fixed height to maintain layout */
+position: absolute;
+   top: 70px;
+  display: block; /* Ensure the span takes up space even if it's empty */
+  /* visibility: hidden; */
+}
+.INVALIED{
+ position: relative;
+ top: 15px;
+ left: 80px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 30px; /* Adjust to ensure space for the eye icon */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.form-footer {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.forgot-password {
+   height: 14px;
+  width: 105px;
+  color: #025AAB;
+  font-family: "Work Sans";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: relative;
+  top: -20px;
+}
+
+.login-button {
+  /* width: 100%; */
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 1em;
+  border-radius: 18px;
+  position: relative;
+  left: 500px;
+  cursor: pointer;
+  height: 36px;
+  width: 169px;
+}
+.from button{
+  width: 50%;
+  padding: 7px;
+  border: none;
+  color: white;
+  font-size: 1em;
+  border-radius: 20px;
+  position: relative;
+  left: 90px;
+  cursor: pointer;
+  font-family: "Nunito Sans";
+}
+.backgorund svg {
+  width: 100%;
+  height: auto; /* Set height to 100% of the viewport height */
+  display: block; /* Ensures SVG behaves as a block element */
+  position: relative;
+}
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Ensure both input fields have the same height */
+.form-group input,
+.password-wrapper input {
+  height: 40px;
+}
+.loginheader{
+  position: relative;
+  top: -420px;
+  font-weight: normal;
+}
+.loginheader p{
+ margin-top: 15px;
+}
+@media (max-width: 576px) {
+  .login-title{
+    text-align: left;
+  }
+  .login_page{
+    width: 100%;
+    height: 720px;
+  }
+  
+  .form-group input {
+    box-sizing: border-box;
+    height: 48px;
+    width: 328px;
+    border: 1px solid #979797;
+    border-radius: 6px;
+    
+  }
+  .loginheader {
+    position: relative;
+    top: -210px;
+  }
+  .logincontener {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+     top: -100px;
+     border: none;
+     height: 422px;
+     width: 100%;
+     border-radius: 10px;
+     background-color: #FFFFFF;
+     box-shadow: 0 7px 18px 0 rgba(2,118,179,0.13);
+  }
+  .from button{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius: 20px;
+    position: relative;
+    top: 30px;
+    left: 5px;
+ 
+    cursor: pointer;
+  }
+ 
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+    /* padding: 20px; */
+    box-shadow:  0 0 0 0;
+    border-radius: 8px;
+ 
+  }
+  .error-text {
+    color: red;
+    font-size: 0.875em;
+    height: 1.25rem; 
+    display: block; 
+    position: absolute;
+   top: 75px;
+  }
+  .mobile_back img{
+    border-radius:0 0 0 87px;
+  }
+  .INVALIED{
+    position: absolute;
+    top: 320px;
+    left: 40px;
+   }
+}

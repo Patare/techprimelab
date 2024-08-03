@@ -1,0 +1,61 @@
+/* Default Styles */
+.headDash {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .headDash img {
+    display: none; /* Hide the logo by default */
+  }
+  
+  .headDash .logout {
+    margin-left: auto;
+  }
+  
+  .chart-container {
+    padding: 10px;
+    margin-top: 60px; /* To avoid overlap with fixed header */
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .headDash {
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+    }
+  
+    .headDash img {
+      display: block;
+      margin-top: 5px;
+    }
+  
+    .headDash .logout {
+      margin-top: 5px;
+    }
+  
+    .dashboard-container {
+      padding: 10px;
+    }
+  
+    .dashboard-card {
+      margin-bottom: 10px;
+    }
+  }
+  

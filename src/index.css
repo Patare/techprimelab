@@ -1,11 +1,11 @@
 .menubar .menubar1 p:hover {
   background-color: rgb(3, 51, 94);
-  ;
   cursor: pointer;
 }
 
+
 .head_icons i:hover {
-  background-color:rgb(19, 19, 153);
+  background-color: rgb(19, 19, 153);
   color: rgb(243, 243, 243);
 }
 
@@ -13,72 +13,96 @@
   text-decoration: none;
   color: white;
 }
-.menubtn{
+
+.menubtn {
   border-radius: 0px;
   color: white;
   font-size: 20px;
+  position: relative;
+  top: 250px;
 }
-.menubtn:hover{
-  color: white;
-  box-shadow:inset 6px -6px 0px rgb(245, 215, 92);
-}
-.labellogin label{
+
+.labellogin label {
   position: relative;
   right: 135px;
- 
 }
-.labellogin input{
+
+.labellogin input {
   border-radius: 10px;
   outline-color: #2b2eff;
 }
-.labellogin button{
+
+.labellogin button {
   border-radius: 50px;
   padding: 5px 70px 5px 70px;
 }
-.submenubtn{
+
+.form-group {
+  padding: 5px;
+}
+
+.submenubtn {
   padding-left: 70px;
   color: white;
   font-size: 18px;
 }
-.submenubtn:hover{
+
+.submenubtn:hover {
   background-color: white;
   color: black;
   cursor: pointer;
 }
-select{
+
+select {
   background-color: lavender;
 }
-.paginationbtn{
+
+.paginationbtn {
   width: 90%;
   height: 40px;
-  margin-left: 50px;
   list-style: none;
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
-.paginationbtn a{
-  padding: 10px;
+
+.tableData {
+  font-size: 14.5px;
+}
+
+.paginationbtn a {
+  padding: 7px 15px 7px 15px;
   margin: 8px;
-  border-radius: 5px;
-  border: 1px solid #2b2eff;
-  color: blue;
+  border-radius: 50%;
   cursor: pointer;
   text-decoration: none;
 }
-.paginationbtn a:hover{
+
+.paginationbtn a:hover {
   color: white;
-  background-color: blue;
-}
-.paginationActive a{
-  color: white;
-  background-color: blue;
+  background-color: #00bfff;
 }
 
+.paginationActive a {
+  color: white;
+  background-color: #00bfff;
+}
 
-/* navbar  */
+.menubar-container {
+  position: relative;
+  width: 110px;
+  top: -160px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 18px 0 rgba(2, 118, 179, 0.13);
+}
+
+/* Navbar */
 .navbar-logo-container {
   height: 100px;
-  background-color: rgb(9, 82, 146);
+}
+
+.leftArrow {
+  position: relative;
+  top: 300px;
 }
 
 .navbar-logo {
@@ -97,6 +121,16 @@ select{
   font-size: 25px;
 }
 
+.login-title {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.menubtn.active {
+  color: white;
+  box-shadow: inset 6px 0px 0px rgb(4, 10, 58);
+}
+
 .navbar-icon {
   cursor: pointer;
   height: 42px;
@@ -104,162 +138,565 @@ select{
   border-radius: 50%;
   padding: 9px;
   border: 1px solid black;
-  margin-left: 10px; 
-}
-.head_icons {
-  height: 100px;
-  width: 100%;
-  background-color: rgb(9, 82, 146);
+  margin-left: 10px;
 }
 
-.bg-body-tertiary{
+.head_icons {
+  background-image: url(../public/Header-bg.svg);
+  height: 150px;
+  width: 100%;
+  border-radius: 0px 0px 0px 50px;
+}
+
+.bg-body-tertiary {
   backdrop-filter: "blur(30px)";
-  margin-top: -700px;
+  margin-top: -850px;
   width: 50%;
   max-width: 400px;
   border-radius: 10px;
 }
-.font-weight-normal{
+
+.font-weight-normal {
   margin-right: 150px;
 }
+
+.dsbordhed {
+  color: #010202;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+
+/* Dashboard */
+.dashboard-container {
+  position: relative;
+  left: -7%;
+  top: -12%;
+}
+
+.dashboard-card {
+  height: 83px;
+  width: 238px;
+  margin: 10px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: start;
+  position: relative;
+  left: 120px;
+  top: 30px;
+  border-left: 5px solid rgb(0, 153, 255);
+}
+
+.justify-content-between .btn {
+  border-radius: 20px;
+  border: 1px solid #2b2eff;
+  padding: 3px 15px 3px 15px;
+}
+
+.justify-content-between .btn:hover {
+  background-color: #2b2eff;
+  color: white;
+}
+
+.listleft {
+  position: relative;
+  top: -60px;
+  border-radius: 10px;
+  /* background-color: #F5F5F5; */
+  border: none;
+}
+
+.addprolist {
+  position: relative;
+  top: -60px;
+}
+
+.headDash span img {
+  position: relative;
+  left: 520px;
+  top: -50px;
+}
+
+.headDash {
+  position: absolute;
+  top: 40px;
+  left: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.chart {
+  height: 400px;
+  width: 100%;
+}
+
+.chart-container {
+  position: relative;
+  right: 15%;
+  margin: auto;
+  height: 50vh;
+  width: 70%;
+  left: -50px;
+  top: -20px;
+}
+
+.chart {
+  height: 387px;
+  width: 635px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 18px 0 rgba(2, 118, 179, 0.13);
+}
+
+.savebtn button{
+  background-color: #03115e;
+  border-radius: 20px;
+  width: 20%;
+}
+.addprolist{
+  border-radius: 10px;
+  
+  background-color: #ffffff;
+}
+.shadow-lg th{
+  height: 19px;
+  width: 87px;
+  color: #3F3F3F;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+.hedname{
+  position: absolute;
+  left: 40px;
+}
+.tableData .name{
+  height: 22px;
+  width: 228px;
+  position: relative;
+  left: 40px;
+  color: #414950;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.44px;
+  line-height: 22px;
+}
+.tableData .allrecord {
+  height: 19px;
+  width: 57px;
+  color: #3F3F3F;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+.allrecord{
+  position: relative;
+  left: -50px;
+}
+.hedertable{
+  position: relative;
+  left: -50px;
+}
+/* .reson{
+  position: relative;
+  left: -10px;
+}
+.resonshed{
+  position: relative;
+  left: -50px;
+} */
+.sort-label ,select{
+  color: #3F3F3F;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+}
+.allstatus{
+  height: 19px;
+  width: 76px;
+  color: #00284C;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 19px;
+  position: relative;
+  left: -50px;
+}
+.allbtn button{
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  letter-spacing: 0;
+ margin-top: -5px;
+ margin-left: 10px;
+  text-align: center;
+  position: relative;
+  left: -50px;
+}
+.row label{
+  color: #767676;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+}
+.form-control {
+    box-sizing: border-box;
+  height: 48px;
+  /* width: 337px; */
+  border: 1px solid #979797;
+  border-radius: 6px
+}
+.row .text-danger{
+  height: 19px;
+  width: 146px;
+  color: #FF3838;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.dashboard-card h6{
+  height: 20px;
+  width: 110px;
+  color: #474D52;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
 @media (max-width: 576px) {
+ 
+.chart{
+  width: 350px;
+  height: 200;
+}
+.barrr{
+
+  width: 600;
+  height: 100;
+}
+  .bar{
+    width: 600;
+    height: 100;
+  }
+  .dsbordhed{
+    height: 22px;
+    width: 373px;
+    color: #474D52;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+  position: relative;
+  /* top: -60px; */
+  }
+  .addprolist{
+    border: none;
+  }
   .navbar-icon {
-      display: none;
+    display: none;
   }
-  .font-weight-normal{
+
+  .font-weight-normal {
     margin-right: 150px;
-   width: 100%;
+    width: 100%;
   }
-  /* login */
-  .bg-body-tertiary{
+
+  .paginationbtn {
+    width: 90%;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    left: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .head_icons {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(9, 82, 146);
+    border-radius: 0px 0px 0px 50px;
+    margin-top: -100px;
+  }
+
+  .bg-body-tertiary {
     backdrop-filter: "blur(30px)";
-    margin-top: -150px;
+    margin-top: -250px;
     width: 100%;
     max-width: 500px;
+    border: none;
   }
-  .labellogin label{
+
+  .labellogin label {
     position: relative;
     right: 100px;
   }
+
   .head_icons {
-    height: 100px;
+    height: 60px;
     width: 100%;
     background-color: rgb(9, 82, 146);
+    border-radius: 0px 0px 0px 50px;
   }
+
   .navbar-logo {
     height: 100%;
     width: 100%;
   }
-  .paginationbtn a{
+
+  .paginationbtn a {
     padding: 10px;
-    margin: 0px;
-    border-radius: 5px;
-    border: 1px solid #2b2eff;
+    margin: 2px;
+    border-radius: 50%;
     color: blue;
     cursor: pointer;
     text-decoration: none;
   }
 
-}
-
-
-/* dashboard */
-.dashboard-container {
-  border: 1px solid black;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  position: relative;
-  left: -7%;
-}
-
-.dashboard-card {
-  height: 100px;
-  width: 180px;
-  margin: 10px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .dashboard-card {
-      height: 150px;
-      width: 150px;
-      margin: 10px auto;
+  .card-body {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
   }
-  .dashboard-container{
+  .card-title span{
+    height: 22px;
+    width: 81px;
+    color: #414950;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.44px;
+    line-height: 22px;
+  } 
+  .card-title .h6{
+    height: 19px;
+    width: 76px;
+    color: #00284C;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-align: right;
+  }
+  .card-text{
+    color: #3F3F3F;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
+  .card-text span{
+    color: #000508;
+  }
+  .chart-container p {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .dashboard-container {
     position: relative;
-    left: 5px;
+    left: -15px;
     width: 330px;
+    top: -200px;
   }
 
-}
-.listleft{
-  position: relative;
-  left: -80px;
-}
-.addprolist{
-  position: relative;
-  left: -80px;
-}
-@media (max-width: 576px) {
-  .dashboard-card {
-      height: 100px;
-      width: 50%;
-      display: flex;
-      margin-left: 0px;
-      border-radius: 10px;
-  }
-  .dashboard-container{
+  .dashboard-container .row {
+    width: 130px;
+    height: 100%;
+    position: relative;
+    left: 0px;
+    bottom: 20px;
     display: flex;
-  
+    flex-wrap: nowrap; /* Prevent wrapping on mobile view */
   }
-  .listleft{
-    position: relative;
-    left: 0px;
-    background-color: #E7E9EB;
-  }
-  .addprolist{
-    position: relative;
-    left: 0px;
-  }
-  .chart {
-    height: 1000px; 
+
+  .dashboard-card {
+    height: 80px;
     width: 100%;
-}
-  
-}
-
-.chart {
-  height: 400px; 
-  width: 100%; 
-}
-
-@media (max-width: 576px) {
-  .chart {
-      height: 600px; 
-      width: 100%; 
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+    top: 30px;
+    border-left: 5px solid rgb(0, 153, 255);
   }
+  .dashboard-card h6{
+    height: 19px;
+    width: 85px;
+    color: #474D52;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
+.dashboard-card h2{
+  color: #474D52;
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 32px;
 }
+  .dashboard-container {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    /* left: 5%; */
+    top: -100px;
+    overflow-y: auto;
+    /* width: 100%; */
+   
+  }
 
-.chart-container {
-  position: relative;
-  margin: auto;
-  height: 80vh; 
-  width: 100%;
-}
+  .listleft {
+    position: relative;
+    left: 0px;
+    top: -90px;
+    border: none;
+  }
 
-@media (max-width: 576px) {
+  .addprolist {
+    position: relative;
+    left: 0px;
+    top: -90px;
+    background-color: #ffffff;
+    box-shadow: 0 7px 18px 0 rgba(2, 118, 179, 0.13);
+  }
+
+
+  .headDash {
+    position: absolute;
+    top: 14px;
+    left: 140px;
+    height: 27px;
+  color: #FFFFFF;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 27px;
+  }
+
+  .headDash span {
+    position: relative;
+    top: 0px;
+    left: -100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
   .chart-container {
-      height: 0vh;
-      width: 95vw;
+    height: 424px;
+  width: 328px;
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: -60px;
   }
-  .chart-container .bar{
-height: 300px;
-  }
-  .menubar-horizontal{
 
-    background-color: #2b2eff;
+  .chart-container .bar {
+    height: 800px;
+  }
+
+  .menubar-horizontal {
+    border-radius: 20px;
+    background-color: #ebf5ff;
+  }
+
+ 
+  .sortbox i{
+    position: relative;
+    left: -250px;
+  }
+  .sort-options-container {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    transition: bottom 0.5s ease-in-out;
+    z-index: 1000;
+    transform: translateY(100%);
+  }
+  
+  .sort-options-container.show {
+    bottom: 0;
+    transform: translateY(calc(100% - 300px)); 
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .savebtn button{
+    background-color: #03115e;
+    border-radius: 20px;
+    width: 100%;
   }
 }
 
 
+
+
+.sortbox{
+  position: relative;
+  left: 400px;
+}
+.sort-options-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  transition: bottom 0.5s ease-in-out;
+  z-index: 1000;
+  transform: translateY(100%);
+}
+
+.sort-options-container.show {
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(100% - 235px)); 
+}
+
+.sort-options-container.show ul li{
+ padding: 5px;
+ margin-right: 280px;
+ text-align: start;
+ list-style-type: none;
+}
+.sort-options-container.show label{
+  margin-right: 245px;
+ }
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
